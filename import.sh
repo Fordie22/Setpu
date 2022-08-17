@@ -60,3 +60,4 @@ make install_pkg
 # install lib
 sudo make install
 yay -S tty-clock
+sudo pacman -S wine -y
