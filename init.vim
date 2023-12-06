@@ -16,7 +16,9 @@ set showtabline=2
 
 "NerdTree
 Plug 'https://github.com/preservim/nerdtree.git'
-
+nnoremap <C-t> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowExpandable="😶"
 
 "Double Time
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
@@ -60,6 +62,12 @@ let g:notes_smart_quotes = 0
 "Dependency
 Plug 'https://github.com/xolox/vim-misc.git'
 
+".MD
+Plug 'https://github.com/junegunn/vim-plug'
+
+"Error
+Plug 'https://github.com/michaelb/sniprun'
+
 "Greeter
 Plug 'mhinz/vim-startify'
 let g:startify_bookmarks = [ {'u': '~/.vimrc'}, {'i': '~/.config/nvim/init.vim'}, {'o':'~/morning-routine.sh'}, {'p':'~/scripts/update.sh'} ]
@@ -89,6 +97,18 @@ Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 "Transparent
 Plug 'https://github.com/xiyaowong/nvim-transparent.git'
 let g:transparent_enabled = v:false
+
+"Tabs
+Plug 'https://github.com/romgrk/barbar.nvim.git'
+Plug 'romgrk/barbar.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
+
+"Noice
+Plug 'https://github.com/folke/noice.nvim.git'
+
+"LaTeX
+Plug 'https://github.com/lervag/vimtex.git'
+
 call plug#end()
 
 "Colours and background
@@ -114,3 +134,5 @@ colorscheme gruvbox
 
 "Comment colours
 highlight Comment ctermfg = LightGray
+
+
